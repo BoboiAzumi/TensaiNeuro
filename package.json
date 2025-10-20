@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "description": "",
+  "description": "Library Neural Network sederhana yang dibangun dengan Typescript",
   "devDependencies": {
     "tsc-alias": "^1.8.16",
     "tsx": "^4.20.6",
@@ -21,5 +21,9 @@
     "@types/node": "^24.8.1",
     "@types/random": "^2.1.1",
     "random": "^5.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BoboiAzumi/TensaiNeuro.git"
   }
 }
