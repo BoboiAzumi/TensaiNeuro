@@ -2,7 +2,6 @@
 # TensaiNeuro.js
 
 [![npm version](https://img.shields.io/npm/v/project-name.svg)](https://www.npmjs.com/package/project-name)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/BoboiAzumi/TensaiNeuro/ci.yml)](https://github.com/BoboiAzumi/TensaiNeuro/actions)
 
 >Library Neural Network sederhana yang dibangun dengan Typescript
 
