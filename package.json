@@ -6,10 +6,12 @@
   "type": "module",
   "scripts": {
     "dev": "tsx src/test.ts",
-    "build": "tsc && tsc-alias"
+    "build": "tsc && tsc-alias",
+    "dev-simple-binary": "tsx src/example/simple-binary-classification.ts",
+    "dev-simple-regression": "tsx src/example/simple-regression.tsx"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["typescript", "javascript", "js", "Neural Network", "library", "npm", "simple", "ann"],
+  "author": "BoboiAzumi",
   "license": "MIT",
   "description": "Library Neural Network sederhana yang dibangun dengan Typescript",
   "devDependencies": {
