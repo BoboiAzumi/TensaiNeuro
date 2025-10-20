@@ -22,5 +22,7 @@ export declare class FCModule {
         loss: number;
     }): void;
     fit(x: number[][], y: number[][], epochs: number, lr?: number, batchSize?: number): void;
+    save(path: string): void;
+    load(path: string): void;
 }
 //# sourceMappingURL=fc-module.d.ts.map

@@ -1,6 +1,5 @@
 import { Tensor } from "../modules/tensor.js";
 import { Linear } from "../network/activation/linear.js";
-import { ReLU } from "../network/activation/relu.js";
 import { DenseLayer } from "../network/layer/dense-layer.js";
 import { MSELoss } from "../network/loss/mse.js";
 import { ADAM } from "../network/optimizer/adam.js";
@@ -16,7 +15,7 @@ const y = [
     [0.5],
     [0.6]
 ];
-const layer1 = new DenseLayer(2, 4, new ReLU(), new ADAM());
+const layer1 = new DenseLayer(2, 4, new Linear(), new ADAM());
 const layer2 = new DenseLayer(4, 1, new Linear(), new ADAM());
 const loss = new MSELoss();
 const lr = 0.01;

@@ -87,5 +87,16 @@ export class DenseLayer {
         this.cleanup();
         this.optimizer.step();
     }
+    getState() {
+        const state = {
+            w: this.w.values(),
+            b: this.b.values()
+        };
+        return state;
+    }
+    setState(state) {
+        this.w = new Tensor(state.w);
+        this.b = new Tensor(state.b);
+    }
 }
 //# sourceMappingURL=dense-layer.js.map

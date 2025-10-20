@@ -3,6 +3,7 @@ import type { Initialization } from "../../types/initialization-type.js";
 import type { Layer } from "../../types/layer-types.js";
 import type { Optimizer } from "../../types/optimizer-type.js";
 import { Tensor } from "../../modules/tensor.js";
+import type { DenseModuleState } from "../../types/dense-module-state.js";
 export declare class DenseLayer implements Layer {
     w: Tensor;
     b: Tensor;
@@ -19,5 +20,7 @@ export declare class DenseLayer implements Layer {
     forward(x: Tensor[]): Tensor[];
     backward(dloss: Tensor[]): Tensor[];
     update(lr?: number): void;
+    getState(): DenseModuleState;
+    setState(state: DenseModuleState): void;
 }
 //# sourceMappingURL=dense-layer.d.ts.map
