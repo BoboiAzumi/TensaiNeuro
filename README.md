@@ -37,21 +37,6 @@ Menggunakan gaya Module
 
 ```
 
-Contoh yang lebih lengkap ada di folder `src/example/`:
-
-- `simple-binary-classification.ts` — contoh klasifikasi biner sederhana
-- `simple-regression.ts` — contoh regresi sederhana
-
-Jalankan contoh di mode development (menggunakan `tsx`) atau build dahulu lalu jalankan `node` pada `dist/`:
-
-```bash
-npm run dev
-# atau setelah build
-node dist/example/simple-binary-classification.js
-```
-
-Catatan: skrip `dev` di `package.json` menunjuk ke `src/test.ts`. Jika ingin menjalankan contoh, sesuaikan skrip atau jalankan langsung via `tsx src/example/simple-binary-classification.ts`.
-
 ## Kontribusi
 
 Kontribusi sangat disambut. Beberapa panduan singkat:
