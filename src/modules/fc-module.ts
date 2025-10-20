@@ -11,6 +11,8 @@ import type { ModuleArchitectureType } from "../types/module-type.js";
 import { BatchLoader } from "../utils/dataset/batch-loader.js";
 import { getInitialization } from "../utils/functional/get-initialization.js";
 import { getOptimizer } from "../utils/functional/get-optimizer.js";
+import { loadDenseModule } from "../utils/models/load-dense-module.js";
+import { saveDenseModule } from "../utils/models/save-dense-module.js";
 import { Tensor } from "./tensor.js";
 
 export class FCModule {
@@ -156,5 +158,16 @@ export class FCModule {
 
             console.log(`Epochs [${i + 1} / ${epochs}], Loss : ${lossTotal / batchIter}`)
         }
+    }
+
+    save(path: string){
+        saveDenseModule(this.layers, path)
+    }
+
+    load(path: string){
+        loadDenseModule(path).map((v, i) => {
+            (this.layers[i] as DenseLayer).w = new Tensor(v.w);
+            (this.layers[i] as DenseLayer).b = new Tensor(v.b);
+        })
     }
 }

@@ -15,6 +15,7 @@ import { HeInitialization } from "../initialization/he-initialization.js";
 import { SGD } from "../optimizer/sgd.js";
 import { tensorAdd2d } from "../../utils/tensor/tensor-add-2d.js";
 import { tensorDivScalar2d } from "../../utils/tensor/tensor-div-scalar-2d.js";
+import type { DenseModuleState } from "../../types/dense-module-state.js";
 
 export class DenseLayer implements Layer {
     w: Tensor;
@@ -142,5 +143,19 @@ export class DenseLayer implements Layer {
         
         this.cleanup()
         this.optimizer.step()
+    }
+
+    getState(){
+        const state: DenseModuleState = {
+            w: this.w.values(),
+            b: this.b.values()
+        }
+
+        return state
+    }
+
+    setState(state: DenseModuleState){
+        this.w = new Tensor(state.w)
+        this.b = new Tensor(state.b)
     }
 }

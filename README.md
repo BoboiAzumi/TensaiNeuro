@@ -1,7 +1,7 @@
 
 # TensaiNeuro.js
 
-[![npm version](https://img.shields.io/npm/v/project-name.svg)](https://www.npmjs.com/package/project-name)
+[![npm version](https://img.shields.io/npm/v/project-name.svg)](https://www.npmjs.com/package/tensaineuro)
 
 >Library Neural Network sederhana yang dibangun dengan Typescript
 
@@ -17,7 +17,7 @@ TensaiNeuro.js adalah library neural network kecil dan ringan yang ditulis denga
 - Loss: Binary Cross-Entropy (BCE), Cross-Entropy, Mean Squared Error (MSE)
 - Optimizer: SGD, ADAM
 
-## Instalasi
+## ⚡Instalasi
 
 ```bash
 npm install tensaineuro
@@ -38,7 +38,6 @@ const x = [
     [0.4, 0.5]
 ]
 
-// Simulasi dataset (output dengan 1 fitur)
 const y = [
     [0.3],
     [0.4],
@@ -46,46 +45,29 @@ const y = [
     [0.6]
 ]
 
-// Mendefenisikan layer
-const layer1 = new DenseLayer(2, 4, new ReLU(), new ADAM())
+const layer1 = new DenseLayer(2, 4, new Linear(), new ADAM())
 const layer2 = new DenseLayer(4, 1, new Linear(), new ADAM())
-
-// Mendefenisikan fungsi loss
 const loss = new MSELoss()
-
-// learning rate
 const lr = 0.01
 
-// Melatih jaringan syaraf tiruan
-for(let i = 0; i < 1000; i++){
-    // Input dengan batch size penuh
+for(let i = 0; i < 100; i++){
     const out1 = layer1.forward([...x.map((v) => new Tensor(v))])
     const out2 = layer2.forward(out1)
-
-    // Hitung loss
     loss.set(
         out2,
         [...y.map((v) => new Tensor(v))]
     )
 
-    // Tampilkan loss per epochs
     console.log(`Loss : ${loss.get()}`)
-
-    // Backpropagation
     const backward = layer2.backward(loss.dLoss())
     layer1.backward(backward)
-
-    // Update layer
     layer2.update(lr)
     layer1.update(lr)
 }
 
-// Testing
 const out1 = layer1.forward([...x.map((v) => new Tensor(v))])
 const out2 = layer2.forward(out1)
-
-// Tampilkan hasil
-out2.map((v) => v.print())
+out2.map((v: Tensor) => v.print())
 ```
 
 Menggunakan gaya Module
@@ -145,7 +127,7 @@ pred.output?.map((v) => {
     v.print()
 })
 ```
-## Klasifikasi Multi kelas
+## 🧠 Klasifikasi Multi kelas
 ```ts
 import { CrossEntropyLoss, FCModule, Softmax, Tensor, TensorType } from "tensaineuro"
 
@@ -208,7 +190,50 @@ new Tensor(pred.output?.map((v) => {
 }) as TensorType).print()
 ```
 
-## Kontribusi
+## ⚙️ Save dan Load model
+
+TensaiNeuro menyediakan fitur untuk menyimpan dan memuat model. Terdapat 2 cara yakni:
+
+Manual
+```ts
+const layer1 = new DenseLayer(2, 4, new Linear(), new ADAM())
+const layer2 = new DenseLayer(4, 1, new Linear(), new ADAM())
+
+// Save Model
+saveDenseModule(
+    [layer1, layer2],
+    "model.json"
+)
+
+// Load Model
+const state = loadDenseModule("model.json")
+
+layer1.setState(state[0] as DenseModuleState)
+layer2.setState(state[1] as DenseModuleState)
+
+```
+
+Menggunakan Modul
+```ts
+const model = new FCModule(
+    2, // Input Shape = 2
+    "adam", // Optimizer = "adam" | "sgd"
+    [   
+        // Layer 1
+        { units: 16, activationFunction: "relu"},
+        // Layer 2 (output shape = 1)  
+        { units: 2, activationFunction: "linear"} 
+    ]
+)
+
+// Menyimpan Model
+model.save("model.json")
+
+// Memuat model
+model.load("model.json")
+```
+
+## 🧑‍💻 Kontribusi
 
 Kontribusi sangat disambut. Beberapa panduan singkat:
 
@@ -219,7 +244,7 @@ Kontribusi sangat disambut. Beberapa panduan singkat:
 
 Untuk pengembangan lokal, gunakan `npm run dev` untuk menjalankan file TypeScript cepat menggunakan `tsx`, dan `npm run build` untuk menghasilkan output produksi.
 
-## Lisensi
+## 📄 Lisensi
 
 Distribusi di bawah Lisensi MIT.
 ```
