@@ -26,6 +26,11 @@ import {
     BatchLoader
 } from "./dataset/index.js"
 
+import {
+    saveDenseModule,
+    loadDenseModule
+} from "./models/index.js"
+
 export {
     tensorAdd1d,
     tensorAdd2d,
@@ -45,5 +50,7 @@ export {
     getOptimizer,
     maketab,
     randomNormal,
-    BatchLoader
+    BatchLoader,
+    saveDenseModule,
+    loadDenseModule
 }

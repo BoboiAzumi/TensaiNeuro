@@ -17,7 +17,9 @@ import {
     getOptimizer,
     maketab,
     randomNormal,
-    BatchLoader
+    BatchLoader,
+    saveDenseModule,
+    loadDenseModule
 } from "./utils/index.js"
 
 import type {
@@ -99,5 +101,7 @@ export {
     ADAM,
     SGD,
     FCModule, 
-    Tensor
+    Tensor,
+    saveDenseModule,
+    loadDenseModule
 }
