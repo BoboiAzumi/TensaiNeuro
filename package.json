@@ -1,6 +1,6 @@
 {
   "name": "tensaineuro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -10,7 +10,16 @@
     "dev-simple-binary": "tsx src/example/simple-binary-classification.ts",
     "dev-simple-regression": "tsx src/example/simple-regression.tsx"
   },
-  "keywords": ["typescript", "javascript", "js", "Neural Network", "library", "npm", "simple", "ann"],
+  "keywords": [
+    "typescript",
+    "javascript",
+    "js",
+    "Neural Network",
+    "library",
+    "npm",
+    "simple",
+    "ann"
+  ],
   "author": "BoboiAzumi",
   "license": "MIT",
   "description": "Library Neural Network sederhana yang dibangun dengan Typescript",
