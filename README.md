@@ -1,0 +1,68 @@
+
+# TensaiNeuro.js
+
+[![npm version](https://img.shields.io/npm/v/project-name.svg)](https://www.npmjs.com/package/project-name)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/username/project-name/ci.yml)](https://github.com/username/project-name/actions)
+
+>Library Neural Network sederhana yang dibangun dengan Typescript
+
+## 🧩 Tentang
+
+TensaiNeuro.js adalah library neural network kecil dan ringan yang ditulis dengan TypeScript untuk penggunaan pendidikan dan eksperimen. Library ini menyediakan utilitas tensor 1D/2D sederhana, modul fully-connected (FC), berbagai fungsi aktivasi, inisialisasi bobot, loss functions, dan optimizer (SGD, ADAM). Cocok untuk memahami dasar backpropagation dan membangun contoh regresi/binary classification.
+
+## ✨ Fitur utama
+
+- Modul FC (fully-connected) sederhana dan tipe Tensor ringan
+- Fungsi aktivasi: Linear, ReLU, Sigmoid, Softmax, Tanh
+- Inisialisasi bobot: He, Xavier, Random, Zero
+- Loss: Binary Cross-Entropy (BCE), Cross-Entropy, Mean Squared Error (MSE)
+- Optimizer: SGD, ADAM
+
+## Instalasi
+
+```bash
+npm install tensaineuro
+```
+
+## 🚀 Penggunaan singkat
+
+Menggunakan gaya Torch like
+
+```ts
+
+```
+
+Menggunakan gaya Module
+```ts
+
+```
+
+Contoh yang lebih lengkap ada di folder `src/example/`:
+
+- `simple-binary-classification.ts` — contoh klasifikasi biner sederhana
+- `simple-regression.ts` — contoh regresi sederhana
+
+Jalankan contoh di mode development (menggunakan `tsx`) atau build dahulu lalu jalankan `node` pada `dist/`:
+
+```bash
+npm run dev
+# atau setelah build
+node dist/example/simple-binary-classification.js
+```
+
+Catatan: skrip `dev` di `package.json` menunjuk ke `src/test.ts`. Jika ingin menjalankan contoh, sesuaikan skrip atau jalankan langsung via `tsx src/example/simple-binary-classification.ts`.
+
+## Kontribusi
+
+Kontribusi sangat disambut. Beberapa panduan singkat:
+
+1. Fork repository
+2. Tambah fitur atau perbaiki bug di branch baru
+3. Tambah/ubah test (jika ada) dan pastikan build TypeScript lulus
+4. Buat pull request dengan deskripsi perubahan
+
+Untuk pengembangan lokal, gunakan `npm run dev` untuk menjalankan file TypeScript cepat menggunakan `tsx`, dan `npm run build` untuk menghasilkan output produksi.
+
+## Lisensi
+
+Distribusi di bawah Lisensi MIT.

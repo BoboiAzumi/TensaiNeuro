@@ -1,0 +1,1 @@
+{"version":3,"file":"tensor-add-1d.d.ts","sourceRoot":"","sources":["../../../src/utils/tensor/tensor-add-1d.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,yBAAyB,CAAC;AACjD,OAAO,KAAK,EAAE,UAAU,EAAE,MAAM,4BAA4B,CAAC;AAE7D,wBAAgB,WAAW,CAAC,CAAC,EAAE,UAAU,EAAE,CAAC,EAAE,UAAU,UAWvD"}

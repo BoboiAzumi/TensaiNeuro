@@ -1,0 +1,1 @@
+{"version":3,"file":"softmax.d.ts","sourceRoot":"","sources":["../../../src/network/activation/softmax.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,yBAAyB,CAAC;AACjD,OAAO,KAAK,EAAE,kBAAkB,EAAE,MAAM,gCAAgC,CAAC;AAKzE,qBAAa,OAAQ,YAAW,kBAAkB;IAC9C,IAAI,CAAC,CAAC,EAAE,MAAM,GAAG,MAAM;IAYvB,CAAC,CAAC,CAAC,EAAE,MAAM,EAAE,EAAE,KAAK,EAAE,MAAM,EAAE,GAAG,MAAM,EAAE;CAO5C"}

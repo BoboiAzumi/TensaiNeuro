@@ -1,0 +1,1 @@
+{"version":3,"file":"tensor-zeros-1d.js","sourceRoot":"","sources":["../../../src/utils/tensor/tensor-zeros-1d.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,yBAAyB,CAAC;AAEjD,MAAM,UAAU,aAAa,CAAC,IAAY;IACtC,OAAO,IAAI,MAAM,CACb,IAAI,KAAK,CAAC,IAAI,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,CAC1B,CAAA;AACL,CAAC"}

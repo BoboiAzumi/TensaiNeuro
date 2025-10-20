@@ -1,0 +1,1 @@
+{"version":3,"file":"loss-type.d.ts","sourceRoot":"","sources":["../../src/types/loss-type.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,MAAM,EAAE,MAAM,sBAAsB,CAAA;AAElD,MAAM,WAAW,YAAY;IACzB,GAAG,CAAC,CAAC,EAAE,MAAM,EAAE,EAAE,CAAC,EAAE,MAAM,EAAE,GAAG,IAAI,CAAA;IACnC,GAAG,IAAI,MAAM,CAAA;IACb,KAAK,IAAI,MAAM,EAAE,CAAA;CACpB"}

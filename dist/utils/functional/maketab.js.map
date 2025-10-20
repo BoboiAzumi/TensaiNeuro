@@ -1,0 +1,1 @@
+{"version":3,"file":"maketab.js","sourceRoot":"","sources":["../../../src/utils/functional/maketab.ts"],"names":[],"mappings":"AAAA,MAAM,UAAU,OAAO,CAAC,WAAmB,CAAC;IACxC,IAAI,GAAG,GAAG,EAAE,CAAA;IACZ,KAAI,IAAI,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,QAAQ,EAAE,CAAC,EAAE,EAAC,CAAC;QAC9B,GAAG,IAAI,IAAI,CAAA;IACf,CAAC;IAED,OAAO,GAAG,CAAA;AACd,CAAC"}

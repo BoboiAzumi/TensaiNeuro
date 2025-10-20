@@ -1,0 +1,1 @@
+{"version":3,"file":"layer-types.d.ts","sourceRoot":"","sources":["../../src/types/layer-types.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,MAAM,EAAE,MAAM,sBAAsB,CAAA;AAElD,MAAM,WAAW,KAAK;IAClB,OAAO,CAAC,CAAC,EAAE,MAAM,EAAE,GAAG,MAAM,EAAE,CAAA;IAC9B,QAAQ,CAAC,KAAK,EAAE,MAAM,EAAE,GAAG,MAAM,EAAE,CAAA;CACtC"}

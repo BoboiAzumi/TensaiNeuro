@@ -1,0 +1,1 @@
+{"version":3,"file":"sigmoid.d.ts","sourceRoot":"","sources":["../../../src/network/activation/sigmoid.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,yBAAyB,CAAC;AACjD,OAAO,KAAK,EAAE,kBAAkB,EAAE,MAAM,gCAAgC,CAAC;AAGzE,qBAAa,OAAQ,YAAW,kBAAkB;IAC9C,IAAI,CAAC,CAAC,EAAE,MAAM,GAAG,MAAM;IAUvB,CAAC,CAAC,CAAC,EAAE,MAAM,GAAG,MAAM;CASvB"}

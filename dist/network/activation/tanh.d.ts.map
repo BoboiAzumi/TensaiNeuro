@@ -1,0 +1,1 @@
+{"version":3,"file":"tanh.d.ts","sourceRoot":"","sources":["../../../src/network/activation/tanh.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,yBAAyB,CAAC;AACjD,OAAO,KAAK,EAAE,kBAAkB,EAAE,MAAM,gCAAgC,CAAC;AAIzE,qBAAa,IAAK,YAAW,kBAAkB;IAC3C,IAAI,CAAC,CAAC,EAAE,MAAM,GAAG,MAAM;IAQvB,CAAC,CAAC,CAAC,EAAE,MAAM,GAAG,MAAM;CAIvB"}

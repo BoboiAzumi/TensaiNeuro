@@ -1,0 +1,1 @@
+{"version":3,"file":"tensor-pow-1d.js","sourceRoot":"","sources":["../../../src/utils/tensor/tensor-pow-1d.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,yBAAyB,CAAA;AAGhD,MAAM,UAAU,WAAW,CAAC,MAAkB,EAAE,GAAW;IACvD,OAAO,IAAI,MAAM,CAAE,MAAuB,CAAC,GAAG,CAAC,CAAC,CAAC,EAAE,EAAE;QACjD,OAAO,IAAI,CAAC,GAAG,CAAE,CAAY,EAAE,GAAG,CAAC,CAAA;IACvC,CAAC,CAAC,CAAC,CAAA;AACP,CAAC"}

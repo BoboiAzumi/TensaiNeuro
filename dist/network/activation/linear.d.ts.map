@@ -1,0 +1,1 @@
+{"version":3,"file":"linear.d.ts","sourceRoot":"","sources":["../../../src/network/activation/linear.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,yBAAyB,CAAA;AAChD,OAAO,KAAK,EAAE,kBAAkB,EAAE,MAAM,gCAAgC,CAAA;AAGxE,qBAAa,MAAO,YAAW,kBAAkB;IAC7C,IAAI,CAAC,CAAC,EAAE,MAAM,GAAG,MAAM;IAIvB,CAAC,CAAC,CAAC,EAAE,MAAM,GAAG,MAAM;CAKvB"}

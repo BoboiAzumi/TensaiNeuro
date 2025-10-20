@@ -1,0 +1,1 @@
+{"version":3,"file":"tensor-mul-scalar-2d.d.ts","sourceRoot":"","sources":["../../../src/utils/tensor/tensor-mul-scalar-2d.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,yBAAyB,CAAC;AACjD,OAAO,KAAK,EAAE,UAAU,EAAE,MAAM,4BAA4B,CAAC;AAE7D,wBAAgB,iBAAiB,CAAC,CAAC,EAAE,UAAU,EAAE,MAAM,EAAE,MAAM,UAY9D"}

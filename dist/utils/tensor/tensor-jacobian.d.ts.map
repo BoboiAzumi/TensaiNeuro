@@ -1,0 +1,1 @@
+{"version":3,"file":"tensor-jacobian.d.ts","sourceRoot":"","sources":["../../../src/utils/tensor/tensor-jacobian.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,yBAAyB,CAAA;AAChD,OAAO,KAAK,EAAE,UAAU,EAAE,MAAM,4BAA4B,CAAA;AAE5D,wBAAgB,cAAc,CAAC,MAAM,EAAE,UAAU,UAiBhD"}

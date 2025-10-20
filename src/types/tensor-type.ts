@@ -1,0 +1,1 @@
+export type TensorType<T = number> = T | TensorType<T>[];

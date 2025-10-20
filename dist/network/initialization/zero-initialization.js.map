@@ -1,0 +1,1 @@
+{"version":3,"file":"zero-initialization.js","sourceRoot":"","sources":["../../../src/network/initialization/zero-initialization.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,aAAa,EAAE,MAAM,uCAAuC,CAAA;AAErE,MAAM,CAAC,MAAM,kBAAkB,GAAmB,CAAC,SAAiB,EAAE,KAAa,EAAU,EAAE;IAC3F,IAAI,MAAM,GAAW,aAAa,CAAC,KAAK,EAAE,SAAS,CAAC,CAAA;IAEpD,OAAO,MAAM,CAAA;AACjB,CAAC,CAAA"}

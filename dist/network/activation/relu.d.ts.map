@@ -1,0 +1,1 @@
+{"version":3,"file":"relu.d.ts","sourceRoot":"","sources":["../../../src/network/activation/relu.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,yBAAyB,CAAA;AAChD,OAAO,KAAK,EAAE,kBAAkB,EAAE,MAAM,gCAAgC,CAAA;AAGxE,qBAAa,IAAK,YAAW,kBAAkB;IAC3C,IAAI,CAAC,CAAC,EAAE,MAAM,GAAG,MAAM;IAWvB,CAAC,CAAC,CAAC,EAAE,MAAM,GAAG,MAAM;CAUvB"}
